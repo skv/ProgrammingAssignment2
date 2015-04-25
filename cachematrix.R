@@ -1,7 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+## Create list holder for cached (memoized) matrix calculations
 
 makeCacheMatrix <- function(x = matrix()) {
         memoize <- NULL
@@ -18,7 +15,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Solve matrix, contained in list holder.
+## Use previously cached (memoized) calculated value, if any.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
